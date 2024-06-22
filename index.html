@@ -18,6 +18,11 @@
   <!-- my styles -->
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../js/script.js" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- App -->
+  <script src="src/app.js"></script>
 </head>
 
 <body>
@@ -31,23 +36,64 @@
       <a href="#about">Tentang kami</a>
       <a href="#produk">Produk</a>
       <a href="#contact">Hubungi kami</a>
+      <a href="#product">Beli Produk</a>
     </div>
 
 
     <div class="navbar-extra">
-      <a href="#" id="search"><i data-feather="search"></i></a>
-      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
       <a href="#" id="menu"><i data-feather="menu"></i></a>
     </div>
+
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search produk">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end-->
+
+
+    <!-- shopping cart start -->
+    <div class="shopping-cart">
+      <div class="cart-item">
+        <img src="image/mlbb.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>Mobile Legend</h3>
+          <div class="item-price">IDR2K</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="image/mlbb.jpg" alt="Product 2">
+        <div class="item-detail">
+          <h3>Mobile Legend</h3>
+          <div class="item-price">IDR30K</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="image/mlbb.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>Mobile Legend</h3>
+          <div class="item-price">IDR30K</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+    </div>
+    <!-- shopping cart end -->
   </nav>
   <!-- navbar end -->
+
+
+
+
 
   <!-- Hero section start -->
   <section class="hero" id="home">
     <main class="content">
       <h1>Topup Di <span><br>Litle Kenzy Store</span></h1>
       <p>Silahkan Beli Sepuasnya.</p>
-      <a href="#" class="cta">beli</a>
     </main>
   </section>
 
@@ -63,12 +109,9 @@
       </div>
       <div class="content">
         <h3>Kenapa memilih web kami?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eius voluptatibus, error quis assumenda omnis
-          recusandae cupiditate alias laboriosam veniam molestias ea ex asperiores, at facere perspiciatis minus dicta
-          dolorum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquid, et in porro vero nam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, debitis harum. Eaque pariatur esse
-          cupiditate sunt quia incidunt amet repellendus?</p>
+        <p>Web kami menyediakan layanan topup games, dan kebutuhan lainnya.</p>
+        <p>Jika kamu bertanya apakah web kita menyediakan layanan topup ewalllet, tentu saja ada!.</p>
+        <p>Jika anda menyukai web ini silahkan belanja sebanyak banyaknya! :)</p>
       </div>
     </div>
   </section>
@@ -77,48 +120,73 @@
   <!-- Produk section start -->
   <section id="produk" class="produk">
     <h2><span>Produk</span> Kami</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo aperiam nemo, itaque optio temporibus.</p>
+    <p>Topup all games, topup ewallet, token, pulsa, dan paket data tri</p>
 
 
     <div class="row">
       <div class="produk-card">
-        <img src="image/mlbb.jpg" alt="-- Mobile Legends --" class="prduk-card-img">
-        <h3 class="produk-card-title">- Mobile Legend 5dm -</h3>
-        <p class="produk-card-price">IDR 2k</p>
+        <img src="image/5.png" alt="-- Mobile Legends --" class="prduk-card-img">
+        <h3 class="produk-card-title">- All Games -</h3>
       </div>
       <div class="produk-card">
-        <img src="image/mlbb.jpg" alt="-- Mobile Legends --" class="prduk-card-img">
-        <h3 class="produk-card-title">- Mobile Legend 5dm -</h3>
-        <p class="produk-card-price">IDR 2k</p>
+        <img src="image/6.jfif" alt="-- Ewallet --" class="prduk-card-img">
+        <h3 class="produk-card-title">- Ewallet -</h3>
       </div>
       <div class="produk-card">
-        <img src="image/mlbb.jpg" alt="-- Mobile Legends --" class="prduk-card-img">
-        <h3 class="produk-card-title">- Mobile Legend 5dm -</h3>
-        <p class="produk-card-price">IDR 2k</p>
+        <img src="image/1.png" alt="-- Mobile Legends --" class="prduk-card-img">
+        <h3 class="produk-card-title">- Token -</h3>
       </div>
       <div class="produk-card">
-        <img src="image/mlbb.jpg" alt="-- Mobile Legends --" class="prduk-card-img">
-        <h3 class="produk-card-title">- Mobile Legend 5dm -</h3>
-        <p class="produk-card-price">IDR 2k</p>
+        <img src="image/3.jfif" alt="-- Mobile Legends --" class="prduk-card-img">
+        <h3 class="produk-card-title">- Pulsa -</h3>
       </div>
       <div class="produk-card">
-        <img src="image/mlbb.jpg" alt="-- Mobile Legends --" class="prduk-card-img">
-        <h3 class="produk-card-title">- Mobile Legend 5dm -</h3>
-        <p class="produk-card-price">IDR 2k</p>
+        <img src="image/4.jfif" alt="-- Mobile Legends --" class="prduk-card-img">
+        <h3 class="produk-card-title">- Paket tri -</h3>
       </div>
       <div class="produk-card">
-        <img src="image/mlbb.jpg" alt="-- Mobile Legends --" class="prduk-card-img">
-        <h3 class="produk-card-title">- Mobile Legend 5dm -</h3>
-        <p class="produk-card-price">IDR 2k</p>
+        <img src="image/2.png" alt="-- Mobile Legends --" class="prduk-card-img">
+        <h3 class="produk-card-title">- Pulsa transfer-</h3>
       </div>
     </div>
   </section>
   <!-- Produk section end -->
 
+  <!-- Product section start -->
+  <section id="product" class="product" x-data="products">
+    <h2><span>Beli</span> Produk</h2>
+    <p>Mobile Legend</p>
+
+    <div class="row">
+      <template x-for="(item, index) in items" x-key="index">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="image/feather-sprite.svg#shopping-cart" />
+              </svg>
+            </a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img :src="`image/${item.img}`" alt="item.name">
+          </div>
+          <div class="product-content">
+            <h3 x-text="item.name"></h3>
+          </div>
+          <div class="product-price"><span x-text="item.price"></span></div>
+
+        </div>
+      </template>
+    </div>
+  </section>
+  <!-- Product section end -->
+
   <!-- contact section start -->
   <section id="contact" class="contact">
     <h2><span>Kontak</span> Kami</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, a!</p>
+    <p>Jika ada masalah silahkan kirim pesan dibawah.</p>
 
     <div class="row">
 
@@ -160,6 +228,24 @@
       </div>
   </footer>
   <!-- footer end -->
+
+  <!--modal box item start  -->
+  <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="image/wp7457359.jpg" alt="product 1">
+        <div class="product-content">
+          <h3>Product !</h3>
+          <p>Diamond mobile legend</p>
+          <p>via id, server, dan nickname</p>
+          <div class="product-price">IDR30K <span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal box item end  -->
 
   <!-- feather icon -->
   <script>

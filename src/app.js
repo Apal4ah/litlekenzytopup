@@ -7,6 +7,21 @@ document.addEventListener('alpine:init', () => {
             { id: 4, name: '19 dm', img: '7.jpg', price: 7000 },
             { id: 5, name: '28 dm', img: '7.jpg', price: 9000 },
             { id: 6, name: '36 dm', img: '7.jpg', price: 11000 },
+            { id: 7, name: 'Tri Data Happy 3GB/30 Hari', img: 'download (5).jpg', price: 17000},
+            { id: 8, name: 'Tri Data Happy 7GB/30 Hari', img: 'download (5).jpg', price: 32000},
+            { id: 9, name: 'Tri Data Happy 11GB/30 Hari', img: 'download (5).jpg', price: 47000},
+            { id: 10, name: 'Tri Data Happy 18GB/30 Hari', img: 'download (5).jpg', price: 65000},
+            { id: 11, name: 'Tri Data Happy 30GB/30 Hari', img: 'download (5).jpg', price: 75000},
+            { id: 12, name: 'Tri Data Happy 30GB/30 Hari', img: 'download (5).jpg', price: 75000},
+            { id: 13, name: 'Tri Data Happy 42GB/30 Hari', img: 'download (5).jpg', price: 93000},
+            { id: 14, name: 'Tri Data Happy 55GB/30 Hari', img: 'download (5).jpg', price: 120000},
+            { id: 15, name: 'Always On 2.5 GB', img: 'download (5).jpg', price: 20000},
+            { id: 16, name: 'Always On 3.5 GB', img: 'download (5).jpg', price: 23000},
+            { id: 17, name: 'Always On 6 GB', img: 'download (5).jpg', price: 32000},
+            { id: 18, name: 'Always On 9 GB', img: 'download (5).jpg', price: 46000},
+            { id: 19, name: 'Always On 12 GB', img: 'download (5).jpg', price: 58500},
+            { id: 20, name: 'Always On 6GB + Unlimited 20GB', img: 'download (5).jpg', price: 79500},
+            { id: 20, name: 'Always On 40GB', img: 'download (5).jpg', price: 108000}
         ],
     }));
 

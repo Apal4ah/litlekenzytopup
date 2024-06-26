@@ -417,7 +417,7 @@ html {
 .product .product-card {
   text-align: center;
   border: 1px solid #666;
-  padding: 2em;
+  padding: 2rem;
 }
 
 .product .product-icons {
@@ -445,12 +445,19 @@ html {
 
 .product .product-image img {
   height: 25rem;
+  padding: 2rem;
 }
 
 .product .product-price {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
+.product p {
+  font-weight: bold;
+  
+}
+
 
 /* contact section */
 .contact .row form {

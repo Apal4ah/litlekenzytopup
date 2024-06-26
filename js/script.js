@@ -33,6 +33,8 @@ const sc = document.querySelector('#shopping-cart-button');
 document.addEventListener('click', function (e) {
     if (!mn.contains(e.target) && !navbarNav.contains(e.target)) {
         navbarNav.classList.remove('active');
+        // ketika logo di klik
+        navbarNav.logo(location.reload()); 
     }
 
     if (!sb.contains(e.target) && !searchForm.contains(e.target)) {

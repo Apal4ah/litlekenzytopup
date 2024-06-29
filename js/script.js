@@ -23,7 +23,6 @@ document.querySelector('#shopping-cart-button').onclick = (e) => {
 };
 
 
-
 // klik di luar elemen
 const mn = document.querySelector('#menu');
 const sb = document.querySelector('#search-button');
@@ -62,4 +61,3 @@ document.querySelector('.modal .close-icon').onclick = (e) => {
     itemDetailModal.style.display = 'none'
     e.preventDefault();
 };
-

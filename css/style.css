@@ -23,6 +23,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /* navbar */
 .navbar {
   display: flex;
@@ -456,7 +457,18 @@ html {
 .product p {
   font-weight: bold;
   text-align: center;
-  
+
+}
+
+.contentt {
+  border: 2px solid white;
+  padding: 12px;
+}
+
+.contentt:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: .3s all ease-in-out;
 }
 
 

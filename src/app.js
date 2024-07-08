@@ -1,3 +1,8 @@
+function myFunction() {
+    var element = document.getElementById("myDIV");
+    element.classList.add("mystyle");
+}
+
 document.addEventListener('alpine:init', () => {
     Alpine.data('products', () => ({
         items: [
@@ -35,129 +40,131 @@ document.addEventListener('alpine:init', () => {
             { id: 31, name: '4588 Diamond', img: '7.jpg', price: 1080000 },
             { id: 32, name: 'Coupon Pass Mobile Legend', img: '7.jpg', price: 71000 },
             { id: 33, name: 'Twilight Pass', img: '7.jpg', price: 140000 },
+            { id: 34, name: 'Starlight via gift (berteman 7 hari)', img: '7.jpg', price: 45000 },
+            { id: 34, name: 'Starlight langsung (berupa diamond)', img: '7.jpg', price: 90000 },
 
             // game free fire
-        { id: 34, name: '5 Diamond', img: 'freefire.jpg', price: 1500 },
-        { id: 35, name: '20 Diamond', img: 'freefire.jpg', price: 4000 },
-        { id: 36, name: '50 Diamond', img: 'freefire.jpg', price: 8000 },
-        { id: 37, name: '70 Diamond', img: 'freefire.jpg', price: 11000 },
-        { id: 38, name: '100 Diamond', img: 'freefire.jpg', price: 15000 },
-        { id: 39, name: '140 Diamond', img: 'freefire.jpg', price: 20000 },
-        { id: 40, name: '210 Diamond', img: 'freefire.jpg', price: 29000 },
-        { id: 41, name: '355 Diamond', img: 'freefire.jpg', price: 47000 },
-        { id: 42, name: '500 Diamond', img: 'freefire.jpg', price: 66000 },
-        { id: 43, name: '720 Diamond', img: 'freefire.jpg', price: 93000 },
-        { id: 44, name: '1075 Diamond', img: 'freefire.jpg', price: 140000 },
-        { id: 45, name: '1440 Diamond', img: 'freefire.jpg', price: 185000 },
-        { id: 46, name: '2000 Diamond', img: 'freefire.jpg', price: 255000 },
-        { id: 47, name: '4000 Diamond', img: 'freefire.jpg', price: 515000 },
-        { id: 48, name: 'Level Up Pass', img: 'freefire.jpg', price: 16500 },
-        { id: 49, name: 'Member Mingguan', img: 'freefire.jpg', price: 29500 },
-        { id: 50, name: 'Member Bulanan', img: 'freefire.jpg', price: 85000 },
-        { id: 51, name: 'Bp Card', img: 'freefire.jpg', price: 44000 },
+            { id: 34, name: '5 Diamond', img: 'freefire.jpg', price: 1500 },
+            { id: 35, name: '20 Diamond', img: 'freefire.jpg', price: 4000 },
+            { id: 36, name: '50 Diamond', img: 'freefire.jpg', price: 8000 },
+            { id: 37, name: '70 Diamond', img: 'freefire.jpg', price: 11000 },
+            { id: 38, name: '100 Diamond', img: 'freefire.jpg', price: 15000 },
+            { id: 39, name: '140 Diamond', img: 'freefire.jpg', price: 20000 },
+            { id: 40, name: '210 Diamond', img: 'freefire.jpg', price: 29000 },
+            { id: 41, name: '355 Diamond', img: 'freefire.jpg', price: 47000 },
+            { id: 42, name: '500 Diamond', img: 'freefire.jpg', price: 66000 },
+            { id: 43, name: '720 Diamond', img: 'freefire.jpg', price: 93000 },
+            { id: 44, name: '1075 Diamond', img: 'freefire.jpg', price: 140000 },
+            { id: 45, name: '1440 Diamond', img: 'freefire.jpg', price: 185000 },
+            { id: 46, name: '2000 Diamond', img: 'freefire.jpg', price: 255000 },
+            { id: 47, name: '4000 Diamond', img: 'freefire.jpg', price: 515000 },
+            { id: 48, name: 'Level Up Pass', img: 'freefire.jpg', price: 16500 },
+            { id: 49, name: 'Member Mingguan', img: 'freefire.jpg', price: 29500 },
+            { id: 50, name: 'Member Bulanan', img: 'freefire.jpg', price: 85000 },
+            { id: 51, name: 'Bp Card', img: 'freefire.jpg', price: 44000 },
 
-        // game honor of king
-        { id: 52, name: '16+1 Token', img: 'hok.jpg', price: 4000 },
-        { id: 53, name: '80+8 Token', img: 'hok.jpg', price: 13000 },
-        { id: 54, name: '240+17 Token', img: 'hok.jpg', price: 41000 },
-        { id: 55, name: '400+32 Token', img: 'hok.jpg', price: 68000 },
-        { id: 56, name: '560+45 Token', img: 'hok.jpg', price: 92000 },
-        { id: 57, name: '800+95 Token', img: 'hok.jpg', price: 115500 },
-        { id: 58, name: '1200+153 Token', img: 'hok.jpg', price: 185000 },
-        { id: 59, name: '2400+324 Token', img: 'hok.jpg', price: 410000 },
-        { id: 60, name: '4000+580 Token', img: 'hok.jpg', price: 670000 },
-        { id: 61, name: '8000+1160 Token', img: 'hok.jpg', price: 1140000 },
-        { id: 62, name: 'Weekly card', img: 'hok.jpg', price: 13000 },
-        { id: 63, name: 'Weekly card plus', img: 'hok.jpg', price: 39000 },
+            // game honor of king
+            { id: 52, name: '16+1 Token', img: 'hok.jpg', price: 4000 },
+            { id: 53, name: '80+8 Token', img: 'hok.jpg', price: 13000 },
+            { id: 54, name: '240+17 Token', img: 'hok.jpg', price: 41000 },
+            { id: 55, name: '400+32 Token', img: 'hok.jpg', price: 68000 },
+            { id: 56, name: '560+45 Token', img: 'hok.jpg', price: 92000 },
+            { id: 57, name: '800+95 Token', img: 'hok.jpg', price: 115500 },
+            { id: 58, name: '1200+153 Token', img: 'hok.jpg', price: 185000 },
+            { id: 59, name: '2400+324 Token', img: 'hok.jpg', price: 410000 },
+            { id: 60, name: '4000+580 Token', img: 'hok.jpg', price: 670000 },
+            { id: 61, name: '8000+1160 Token', img: 'hok.jpg', price: 1140000 },
+            { id: 62, name: 'Weekly card', img: 'hok.jpg', price: 13000 },
+            { id: 63, name: 'Weekly card plus', img: 'hok.jpg', price: 39000 },
 
-        // // Paket data tri
-        { id: 52, name: 'Tri Data Happy 3GB/30 Hari', img: 'download (5).jpg', price: 17000 },
-        { id: 53, name: 'Tri Data Happy 7GB/30 Hari', img: 'download (5).jpg', price: 32000 },
-        { id: 54, name: 'Tri Data Happy 11GB/30 Hari', img: 'download (5).jpg', price: 47000 },
-        { id: 55, name: 'Tri Data Happy 18GB/30 Hari', img: 'download (5).jpg', price: 65000 },
-        { id: 56, name: 'Tri Data Happy 30GB/30 Hari', img: 'download (5).jpg', price: 75000 },
-        { id: 57, name: 'Tri Data Happy 30GB/30 Hari', img: 'download (5).jpg', price: 75000 },
-        { id: 58, name: 'Tri Data Happy 42GB/30 Hari', img: 'download (5).jpg', price: 93000 },
-        { id: 59, name: 'Tri Data Happy 55GB/30 Hari', img: 'download (5).jpg', price: 120000 },
-        { id: 60, name: 'Always On 2.5 GB', img: 'download (5).jpg', price: 20000 },
-        { id: 61, name: 'Always On 3.5 GB', img: 'download (5).jpg', price: 23000 },
-        { id: 62, name: 'Always On 6 GB', img: 'download (5).jpg', price: 32000 },
-        { id: 63, name: 'Always On 9 GB', img: 'download (5).jpg', price: 46000 },
-        { id: 64, name: 'Always On 12 GB', img: 'download (5).jpg', price: 58500 },
-        { id: 65, name: 'Always On 6GB + Unlimited 20GB', img: 'download (5).jpg', price: 79500 },
-        { id: 66, name: 'Always On 40GB', img: 'download (5).jpg', price: 108000 },
+            // // Paket data tri
+            { id: 52, name: 'Tri Data Happy 3GB/30 Hari', img: 'download (5).jpg', price: 17000 },
+            { id: 53, name: 'Tri Data Happy 7GB/30 Hari', img: 'download (5).jpg', price: 32000 },
+            { id: 54, name: 'Tri Data Happy 11GB/30 Hari', img: 'download (5).jpg', price: 47000 },
+            { id: 55, name: 'Tri Data Happy 18GB/30 Hari', img: 'download (5).jpg', price: 65000 },
+            { id: 56, name: 'Tri Data Happy 30GB/30 Hari', img: 'download (5).jpg', price: 75000 },
+            { id: 57, name: 'Tri Data Happy 30GB/30 Hari', img: 'download (5).jpg', price: 75000 },
+            { id: 58, name: 'Tri Data Happy 42GB/30 Hari', img: 'download (5).jpg', price: 93000 },
+            { id: 59, name: 'Tri Data Happy 55GB/30 Hari', img: 'download (5).jpg', price: 120000 },
+            { id: 60, name: 'Always On 2.5 GB', img: 'download (5).jpg', price: 20000 },
+            { id: 61, name: 'Always On 3.5 GB', img: 'download (5).jpg', price: 23000 },
+            { id: 62, name: 'Always On 6 GB', img: 'download (5).jpg', price: 32000 },
+            { id: 63, name: 'Always On 9 GB', img: 'download (5).jpg', price: 46000 },
+            { id: 64, name: 'Always On 12 GB', img: 'download (5).jpg', price: 58500 },
+            { id: 65, name: 'Always On 6GB + Unlimited 20GB', img: 'download (5).jpg', price: 79500 },
+            { id: 66, name: 'Always On 40GB', img: 'download (5).jpg', price: 108000 },
 
-        // ewallet dana
-        { id: 67, name: 'Dana 5.000', img: 'dana.png', price: 7000 },
-        { id: 68, name: 'Dana 10.000', img: 'dana.png', price: 12000 },
-        { id: 69, name: 'Dana 20.000', img: 'dana.png', price: 22000 },
-        { id: 70, name: 'Dana 30.000', img: 'dana.png', price: 32000 },
-        { id: 71, name: 'Dana 40.000', img: 'dana.png', price: 42000 },
-        { id: 72, name: 'Dana 50.000', img: 'dana.png', price: 52000 },
-        { id: 73, name: 'Dana 60.000', img: 'dana.png', price: 62000 },
-        { id: 74, name: 'Dana 70.000', img: 'dana.png', price: 72000 },
-        { id: 75, name: 'Dana 100.000', img: 'dana.png', price: 102000 }
+            // ewallet dana
+            { id: 67, name: 'Dana 5.000', img: 'dana.png', price: 7000 },
+            { id: 68, name: 'Dana 10.000', img: 'dana.png', price: 12000 },
+            { id: 69, name: 'Dana 20.000', img: 'dana.png', price: 22000 },
+            { id: 70, name: 'Dana 30.000', img: 'dana.png', price: 32000 },
+            { id: 71, name: 'Dana 40.000', img: 'dana.png', price: 42000 },
+            { id: 72, name: 'Dana 50.000', img: 'dana.png', price: 52000 },
+            { id: 73, name: 'Dana 60.000', img: 'dana.png', price: 62000 },
+            { id: 74, name: 'Dana 70.000', img: 'dana.png', price: 72000 },
+            { id: 75, name: 'Dana 100.000', img: 'dana.png', price: 102000 }
         ],
     }));
 
-Alpine.store('cart', {
-    items: [],
-    total: 0,
-    quantity: 0,
-    add(newItem) {
-        // cek apakah item sudah ada di cart
-        const cartItem = this.items.find((item) => item.id === newItem.id);
+    Alpine.store('cart', {
+        items: [],
+        total: 0,
+        quantity: 0,
+        add(newItem) {
+            // cek apakah item sudah ada di cart
+            const cartItem = this.items.find((item) => item.id === newItem.id);
 
-        // kalau belum ada/cart masih kosong
-        if (!cartItem) {
-            this.items.push({ ...newItem, quantity: 1, total: newItem.price });
-            this.quantity++;
-            this.total += newItem.price;
-        } else {
-            // jika barang sudah ada, cek apakah barang beda atau sama dengan yang ada di cart  
-            this.items = this.items.map((item) => {
-                // jika barang berbeda
-                if (item.id !== newItem.id) {
-                    return item;
-                } else {
-                    // jika brang sudah ada, tambah jumlah dan quantity dan totalnya  
-                    item.quantity++;
-                    item.total = item.price * item.quantity;
-                    this.quantity++;
-                    this.total += item.price;
-                    return item;
-                }
-            });
-        }
-    },
-    remove(id) {
-        // ambil item yang mau di remove berdasarkan id 
-        const cartItem = this.items.find((item) => item.id === id);
+            // kalau belum ada/cart masih kosong
+            if (!cartItem) {
+                this.items.push({ ...newItem, quantity: 1, total: newItem.price });
+                this.quantity++;
+                this.total += newItem.price;
+            } else {
+                // jika barang sudah ada, cek apakah barang beda atau sama dengan yang ada di cart  
+                this.items = this.items.map((item) => {
+                    // jika barang berbeda
+                    if (item.id !== newItem.id) {
+                        return item;
+                    } else {
+                        // jika brang sudah ada, tambah jumlah dan quantity dan totalnya  
+                        item.quantity++;
+                        item.total = item.price * item.quantity;
+                        this.quantity++;
+                        this.total += item.price;
+                        return item;
+                    }
+                });
+            }
+        },
+        remove(id) {
+            // ambil item yang mau di remove berdasarkan id 
+            const cartItem = this.items.find((item) => item.id === id);
 
-        // jika item lebih dari 1
-        if (cartItem.quantity > 1) {
+            // jika item lebih dari 1
+            if (cartItem.quantity > 1) {
 
-            // telusuri 1 1
-            this.items = this.items.map((item) => {
-                // jika bukan barang yang diklik
-                if (item.id !== id) {
-                    return item;
-                } else {
-                    item.quantity--;
-                    item.total = item.price * item.quantity;
-                    this.quantity--;
-                    this.total -= item.price;
-                    return item;
-                }
-            });
-        } else if (cartItem.quantity === 1) {
-            // jika barang sisa 1
-            this.items = this.items.filter((item) => item.id !== id);
-            this.quantity--;
-            this.total -= cartItem.price;
-        }
-    },
-});
+                // telusuri 1 1
+                this.items = this.items.map((item) => {
+                    // jika bukan barang yang diklik
+                    if (item.id !== id) {
+                        return item;
+                    } else {
+                        item.quantity--;
+                        item.total = item.price * item.quantity;
+                        this.quantity--;
+                        this.total -= item.price;
+                        return item;
+                    }
+                });
+            } else if (cartItem.quantity === 1) {
+                // jika barang sisa 1
+                this.items = this.items.filter((item) => item.id !== id);
+                this.quantity--;
+                this.total -= cartItem.price;
+            }
+        },
+    });
 });
 
 // form validation

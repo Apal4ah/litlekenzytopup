@@ -9,7 +9,7 @@ document.addEventListener('alpine:init', () => {
             // game
             // mobile legend
             { id: 1, name: '5 Diamond', img: '7.jpg', price: 2000 },
-            { id: 2, name: '10 Diamond', img: '7.jpg', price: 4000 },
+            { id: 2, name: '10 Diamond', img: '7.jpg', price: 4500 },
             { id: 3, name: '14 Diamond', img: '7.jpg', price: 5500 },
             { id: 4, name: '19 Diamond', img: '7.jpg', price: 7000 },
             { id: 5, name: '28 Diamond', img: '7.jpg', price: 9000 },

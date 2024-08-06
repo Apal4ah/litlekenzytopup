@@ -97,6 +97,18 @@ document.addEventListener('alpine:init', () => {
             { id: 80, name: 'Dana 75.000', img: 'dana.png', price: 77500  },
             { id: 81, name: 'Dana 100.000', img: 'dana.png', price: 102000 },
             { id: 82, name: 'Dana 105.000', img: 'dana.png', price: 107500 },
+
+            // gopay
+            { id: 82, name: 'Gopay 10.000', img: 'gopay.jpg', price: 12000 },
+            { id: 82, name: 'Gopay 20.000', img: 'gopay.jpg', price: 22000 },
+            { id: 82, name: 'Gopay 30.000', img: 'gopay.jpg', price: 32000 },
+            { id: 82, name: 'Gopay 40.000', img: 'gopay.jpg', price: 42000 },
+            { id: 82, name: 'Gopay 50.000', img: 'gopay.jpg', price: 52000 },
+            { id: 82, name: 'Gopay 60.000', img: 'gopay.jpg', price: 62000 },
+            { id: 82, name: 'Gopay 70.000', img: 'gopay.jpg', price: 72000 },
+            { id: 82, name: 'Gopay 80.000', img: 'gopay.jpg', price: 82000 },
+            { id: 82, name: 'Gopay 90.000', img: 'gopay.jpg', price: 92000 },
+            { id: 82, name: 'Gopay 100.000', img: 'gopay.jpg', price: 102000 },
             
             //token PLN
             { id: 83, name: 'Token PLN 20.000', img: '1.png', price: 22000 },

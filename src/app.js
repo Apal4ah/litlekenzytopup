@@ -3,6 +3,8 @@ function myFunction() {
     element.classList.add("mystyle");
 }
 
+alert('HARAP REFRESH SAMPAI HARGA MUNCUL !!');
+
 document.addEventListener('alpine:init', () => {
     Alpine.data('products', () => ({
         items: [

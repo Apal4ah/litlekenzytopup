@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 /*Install Midtrans PHP Library (https://github.com/Midtrans/midtrans-php)
 composer require midtrans/midtrans-php
 
@@ -36,4 +36,4 @@ $params = array(
 
 $snapToken = \Midtrans\Snap::getSnapToken($params);
 echo $snapToken;
-
+ -->

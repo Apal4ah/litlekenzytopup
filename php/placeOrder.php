@@ -1,4 +1,4 @@
-<!-- <?php 
+<!-- <?php
 /*Install Midtrans PHP Library (https://github.com/Midtrans/midtrans-php)
 composer require midtrans/midtrans-php
 
@@ -8,8 +8,7 @@ the file manually.
 
 require_once dirname(__FILE__) . '/pathofproject/Midtrans.php'; */
 
-require_once dirname(__FILE__) . '/midtrans-php-master/Midtrans.php';
-
+require_once dirname(__FILE__) . '/midtrans-php-master/Midtrans.php'; 
 //SAMPLE REQUEST START HERE
 
 // Set your Merchant Server Key
@@ -36,4 +35,4 @@ $params = array(
 
 $snapToken = \Midtrans\Snap::getSnapToken($params);
 echo $snapToken;
- -->
+

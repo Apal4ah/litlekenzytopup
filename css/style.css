@@ -421,6 +421,10 @@ html {
   padding: 2rem;
 }
 
+.row .product-card h3 {
+  margin: 10px 0;
+}
+
 .product .product-icons {
   display: flex;
   justify-content: center;
